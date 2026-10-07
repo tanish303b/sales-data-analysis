@@ -1,0 +1,62 @@
+SALES DATA ANALYSIS - SUMMARY
+============================================================
+
+DATA CLEANING
+  Rows in raw file            : 6,223
+  Duplicate rows removed      : 40
+  Rows dropped (no quantity)  : 30
+  Payment mode filled 'Unknown': 61
+  Rows used for analysis      : 6,153
+
+KEY NUMBERS
+  Period                      : 2024-01 to 2025-12
+  Total revenue               : Rs. 5,844,865
+  Total profit                : Rs. 1,540,348
+  Profit margin               : 26.4%
+  Orders                      : 6,153
+  Units sold                  : 15,651
+  Average order value         : Rs. 950
+
+INSIGHTS
+  1. Revenue grew 11.6% from 2024 (Rs. 2,762,800) to 2025 (Rs. 3,082,066).
+  2. Best month: 2025-11 (Rs. 355,124). Weakest month: 2024-04 (Rs. 179,659).
+  3. October and November together bring 21.7% of all revenue (2 of 12 months = 16.7% if sales were even).
+  4. An average weekend day earns Rs. 10,689 against Rs. 6,927 on a working day (54% more).
+  5. Top category: Groceries with 25.5% of revenue. Highest margin: Clothing (39.9%). Lowest margin: Groceries (13.4%).
+  6. Top product: Wheat Flour 10kg (Rs. 510,006). The top 3 products bring 24.3% of revenue.
+  7. Profit margin falls from 30.2% with no discount to 11.8% at a 20% discount, while the average quantity per order stays about the same (2.55 vs 2.57).
+  8. Returning customers place 60.5% of the orders.
+  9. Most used payment mode: UPI (44.2% of revenue).
+
+REVENUE BY CATEGORY
+                  revenue    profit  revenue_share_pct  margin_pct
+category                                                          
+Groceries       1491461.0  200502.0               25.5        13.4
+Electronics     1244254.6  299848.6               21.3        24.1
+Clothing        1017993.3  406348.3               17.4        39.9
+Personal Care    851980.0  233550.0               14.6        27.4
+Home & Kitchen   733747.2  232057.2               12.6        31.6
+Stationery       505429.3  168042.3                8.6        33.2
+
+TOP 10 PRODUCTS BY REVENUE
+                     revenue  units    profit
+product                                      
+Wheat Flour 10kg    510006.0   1281   52689.0
+Smart Watch         467694.0    166   94194.0
+Basmati Rice 5kg    442455.0    718   69095.0
+Bluetooth Earbuds   429838.0    301  113788.0
+Men's T-Shirt       336376.0    714  140026.0
+Shampoo 340ml       312912.0   1026   83088.0
+Jeans               309682.0    250  114682.0
+Tea 500g            291536.0   1097   52390.0
+Sunflower Oil 1L    247464.0   1626   26328.0
+Pressure Cooker 3L  244542.0    176   60622.0
+
+PROFIT MARGIN BY DISCOUNT LEVEL
+              orders     revenue     profit  avg_quantity  margin_pct
+discount_pct                                                         
+0               3037  3054572.00  921077.00          2.55       30.15
+5               1210  1098976.15  286813.15          2.50       26.10
+10               989   911287.80  205562.80          2.59       22.56
+15               618   537780.55   98240.55          2.54       18.27
+20               299   242248.80   28654.80          2.57       11.83
